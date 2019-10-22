@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="hello" extends="base.definition">
+		<put-attribute name="title" value="NVoter" />
+		<put-attribute name="body" value="/WEB-INF/jsp/hello.jsp" />
+	</definition>
+
+	<definition name="voteScreen" extends="base.definition">
+		<put-attribute name="title" value="Vote" />
+		<put-attribute name="body" value="/WEB-INF/jsp/voteScreen.jsp" />
+	</definition>
+	
+	<definition name="voteConfirmation" extends="base.definition">
+		<put-attribute name="title" value="Voting Confirmation" />
+		<put-attribute name="body" value="/WEB-INF/jsp/voteConfirmation.jsp" />
+	</definition>
+	
+	<definition name="createUserScreen" extends="base.definition">
+		<put-attribute name="title" value="User" />
+		<put-attribute name="body" value="/WEB-INF/jsp/createUserScreen.jsp" />
+	</definition>
+	
+	<definition name="createUserConfirmation" extends="base.definition">
+		<put-attribute name="title" value="User Confirmation" />
+		<put-attribute name="body" value="/WEB-INF/jsp/createUserConfirmation.jsp" />
+	</definition>
+	
+	<definition name="dashboardScreen" extends="base.definition">
+		<put-attribute name="title" value="User" />
+		<put-attribute name="body" value="/WEB-INF/jsp/dashboardScreen.jsp" />
+	</definition>
+	
+	<definition name="loginScreen" extends="base.definition">
+		<put-attribute name="title" value="User" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="/WEB-INF/jsp/loginScreen.jsp" />
+		<put-attribute name="footer" value="" />
+	</definition>
+	
+	<definition name="viewUsersScreen" extends="base.definition">
+		<put-attribute name="title" value="View Users" />
+		<put-attribute name="body" value="/WEB-INF/jsp/viewUsersScreen.jsp" />
+	</definition>
+	
+	<definition name="userSignUpScreen" extends="base.definition">
+		<put-attribute name="title" value="User" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="/WEB-INF/jsp/userSignUpScreen.jsp" />
+		<put-attribute name="footer" value="" />
+	</definition>
+	
+	<definition name="userSignUpConfirmation" extends="base.definition">
+		<put-attribute name="title" value="User Confirmation" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="/WEB-INF/jsp/userSignUpConfirmation.jsp" />
+		<put-attribute name="footer" value="" />
+	</definition>
+	
+	<definition name="scheduleInputScreen" extends="base.definition">
+		<put-attribute name="title" value="Schedule Input" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scheduleInputScreen.jsp" />
+	</definition>
+	
+	<definition name="scheduleOutputScreen" extends="base.definition">
+		<put-attribute name="title" value="Schedule Output" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scheduleOutputScreen.jsp" />
+	</definition>
+
+</tiles-definitions>
